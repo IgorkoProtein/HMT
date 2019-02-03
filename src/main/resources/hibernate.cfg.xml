@@ -22,5 +22,7 @@
         <mapping class="places.domain.MapArea"/>
         <mapping class="places.domain.User"/>
 
+        <mapping class="IgorKup.ListMapping.BookL"/>
+
     </session-factory>
 </hibernate-configuration>

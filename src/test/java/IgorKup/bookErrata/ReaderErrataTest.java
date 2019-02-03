@@ -20,7 +20,7 @@ public class ReaderErrataTest {
         Transaction transaction = session.beginTransaction();
 
         session.createQuery("delete from ReaderErrata").executeUpdate();
-        session.createQuery("delete from Book ").executeUpdate();
+        session.createQuery("delete from BookL ").executeUpdate();
 
         transaction.commit();
         session.close();
