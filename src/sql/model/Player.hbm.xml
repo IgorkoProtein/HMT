@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="IgorKup.model.Player" table="Player">
+        <id name="id" >
+            <column name="id" sql-type="int(11)" not-null="true"/>
+            <generator class="increment" />
+        </id>
+        <property name="nickName" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="bet" type="int">
+            <column name="last_bet" />
+        </property>
+    </class>
+</hibernate-mapping>
